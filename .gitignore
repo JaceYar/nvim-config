@@ -1,0 +1,15 @@
+tt.*
+.tests
+doc/tags
+debug
+.repro
+foo.*
+*.log
+data
+
+# Vim swap, backup, and undo files
+*.swp
+*.swo
+*.un~
+.netrwhist
+.env
