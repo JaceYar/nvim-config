@@ -6,7 +6,7 @@
 vim.keymap.set("n", "<leader>vt", function()
   local dir = vim.fn.expand("%:p:h")
   vim.cmd("rightbelow vsplit")
-  vim.cmd("lcd " .. dir)
+  vim.cmd("lcd " .. vim.fn.fnameescape(dir))
   vim.cmd("terminal")
   vim.cmd("startinsert")
 end, { desc = "Vertical Terminal (right split)" })
